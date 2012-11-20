@@ -12,7 +12,7 @@
 			background-color:#ccc;
 			font-family:serif;
 		}
-		h1, h2 {
+		h1, h2, h3 {
 			font-family:sans-serif;
 			color:#37a9cf;
 			text-shadow: #333 1px 1px 0px;
@@ -38,35 +38,69 @@
 			width:600px;
 			margin:2em auto;
 			padding:1em;
+			border:1px solid #333;
+			border-radius:10px;
 			box-shadow:0 0 10px 10px #888;
 			background-color:#fff;
 			background:url(fleurdelis.png) top right no-repeat #fff;
 		}
 		#register {
-			position:fixed;
-			top:2em;
-			right:2em;
+			display:block;
 
-			background-color:#0c0;
-
+			margin:1em;
 			padding:1em;
 			border:3px solid white;
-			border-radius:5px;
-			color:white;
-			
+			border-radius:10px;
 			box-shadow:0 0 10px 10px #888;
-		}
-		#register a {
+
 			color:white;
+			text-shadow:1px 1px 0px #000;
+			font-size:200%;
 			font-weight:bold;
 			font-family:sans-serif;
 			font-style:italic;
+			text-align:center;
+			text-decoration:none;
+
+			background: #bfd255; /* Old browsers */
+			background: -moz-linear-gradient(top,  #bfd255 0%, #8eb92a 50%, #72aa00 51%, #9ecb2d 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bfd255), color-stop(50%,#8eb92a), color-stop(51%,#72aa00), color-stop(100%,#9ecb2d)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  #bfd255 0%,#8eb92a 50%,#72aa00 51%,#9ecb2d 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  #bfd255 0%,#8eb92a 50%,#72aa00 51%,#9ecb2d 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  #bfd255 0%,#8eb92a 50%,#72aa00 51%,#9ecb2d 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  #bfd255 0%,#8eb92a 50%,#72aa00 51%,#9ecb2d 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfd255', endColorstr='#9ecb2d',GradientType=0 ); /* IE6-9 */
+		}
+		#register:hover {
+			text-shadow:0px 0px 5px #000;
+			box-shadow:0 0 10px 10px #000;
+		}
+		#sponsors {
+			position:fixed;
+			right:0;
+			padding:0 1em 1em 1em;
+			border:1px solid #333;
+			border-top-left-radius:10px;
+			border-bottom-left-radius:10px;
+			box-shadow:0 0 10px 10px #888;
+
+			background-color:white;
+			text-align:center;
+		}
+		#sponsors div + div {
+			margin-top:2em;
 		}
 	</style>
 </head>
 <body>
-	<div id="register">
-		<a href="#">Register now!</a>
+	<div id="sponsors">
+		<h3>Sponsors:</h3>
+		<div>
+			<a href="http://www.cafepressinc.com/careers/"><img src="cafepress.png" alt="CafePress" /></a>
+		</div>
+		<div>
+			<a href="http://www.adeccousa.com/"><img src="adecco.png" alt="Adecco" /></a>
+		</div>
 	</div>
 	<div id="content">
 		<h1>Louisville Global Day of Code Retreat 2012</h1>
@@ -79,6 +113,9 @@
 			<li><a href="#howmuch">How much does it cost?</a></li>
 			<li><a href="#who">Who is organizing this?</a></li>
 		</ul>
+		<div>
+			<a id="register" href="http://louisvillecoderetreat.eventbrite.com">Register now!</a>
+		</div>
 
 		<h2><a name="whatis">What is a Code Retreat?</a></h2>
 		<p>A code retreat is a day-long event where programmers gather to practice the fundamentals of programming outside of the constraints of work.</p>
@@ -116,7 +153,7 @@
 		<p>Nothing. Lunch is provided.</p>
 
 		<h2><a name="who">Who is organizing this?</a></h2>
-		<p>The Louisville code retreat session is organized by <a href="https://twitter.com/ericlathrop">Eric Lathrop</a> (<a href="mailto:eric@ericlathrop.com">email</a>). The venue is sponsored by XXX, and lunch is sponsored by XXX.</p>
+		<p>The Louisville code retreat session is organized by <a href="https://twitter.com/ericlathrop">Eric Lathrop</a> (<a href="mailto:eric@ericlathrop.com">email</a>). The venue is sponsored by <a href="http://www.adeccousa.com/">Adecco</a>, and lunch is sponsored by <a href="http://www.cafepressinc.com/careers/">CafePress</a>.</p>
 	</div>
 </body>
 </html>
