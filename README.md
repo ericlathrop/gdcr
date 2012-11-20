@@ -6,4 +6,5 @@ This is my session page for the Louisville, Kentucky session of the [Global Day 
 You can see the page at http://ericlathrop.com/louisville_code_retreat/
 
 It's static HTML, so you can host it anywhere.
-License: Public Domain
+
+License: Public Domain (please fork!)
